@@ -1,0 +1,15 @@
+{
+  "name": "i-love-my-city-handlebars",
+  "version": "1.0.0",
+  "description": "Node js application using handlebar template",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "venkat",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0"
+  }
+}
