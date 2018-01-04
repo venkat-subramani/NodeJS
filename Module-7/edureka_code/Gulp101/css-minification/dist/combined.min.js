@@ -1,0 +1,1 @@
+.bigIcon{padding-left:65px;padding-right:160px}a:hover{text-decoration:none}.navbar-custom{background-color:#222;border-radius:2}.navbar-custom .navbar-nav>li>a{color:#fff}.nav>li>a:focus,.navbar-custom .navbar-nav>li>a:hover{text-decoration:none;background-color:#3a3}

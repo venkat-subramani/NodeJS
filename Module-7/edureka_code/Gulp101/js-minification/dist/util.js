@@ -1,0 +1,1 @@
+function myFunction(){var i,x=document.forms.frm1,text="";for(i=0;i<x.length;i++)text+=x.elements[i].value+"<br>";document.getElementById("demo").innerHTML=text}

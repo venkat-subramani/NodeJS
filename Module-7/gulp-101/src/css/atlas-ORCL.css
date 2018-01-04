@@ -1,0 +1,81 @@
+/* *{
+	font-family: monospace;
+} */
+body{
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	font-size:12px;
+}
+/* .navbar .navbar-nav > li > a{
+	font-family: monospace !important;
+}
+.app-container .content-container .side-menu .navbar-nav li.dropdown ul li a{
+	font-family: monospace !important;
+} */
+/*======== Navbar color ===========*/
+.flat-blue .navbar.navbar-inverse{
+	background-color: #9e1a1a !important;
+	max-height:45px;
+}
+.flat-blue .navbar.navbar-inverse > .container-fluid{
+	background-color: #9e1a1a !important;
+}.flat-blue .navbar.navbar-inverse .navbar-nav > li{
+	border-left: 0px solid #9e1a1a !important;
+}
+@media screen and (max-width:980px) {
+	.flat-blue .navbar.navbar-inverse .navbar-nav > li{
+	border-left: 0px solid white !important;
+}
+}
+.navbar .navbar-nav > li > a{
+	padding: 0px 20px 0px 0px;
+}
+.flat-blue .side-menu.sidebar-inverse{
+	background-color: #9e1a1a !important;
+}
+.flat-blue .side-menu.sidebar-inverse .navbar{
+	background-color: #9e1a1a !important;
+}
+.bg-default, .bg-default:HOVER{
+    color: #fff;
+    background: #9e1a1a !important;
+}
+#panelBody{
+	background-color: #740101;
+}
+/** Dashboard card class **/
+@media only screen and (min-width: 980px) {
+.asmt-tile{
+    background-color: #c13535;
+	margin-right:10px;
+	color:#fff;
+	min-height:135px;
+	padding: 5px 10px 12px 10px !important;
+	border-radius: 15px;
+}
+}
+
+@media only screen and (max-width: 980px) {
+	.asmt-tile{
+    background-color:#c13535;
+	margin-right:10px;
+	color:#fff;
+	min-height:180px;
+	padding: 5px 10px 12px 10px !important;
+	border-radius: 15px;
+}
+}
+/* Scorecard */
+.db-header, .ver-card-header{
+ 	float:right;
+    text-align: center;
+    margin: -47px 3px 0;
+    border-radius:3px;
+    padding:15px;
+    font-size: 13px;
+    font-weight: bold;
+    color:#fff;
+	background: #c13535;
+    box-shadow: 0 12px 20px -10px #d35f5f, 0 4px 20px 0px #c13535, 0 7px 8px -5px #d35f5f;
+}
