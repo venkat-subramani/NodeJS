@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="employeeApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Employees</title>
+    <link rel="stylesheet" href="/client/public/css/bootstrap.min.css">
+</head>
+
+<body class="container" ng-controller="employeeController">
+    <div class="jumbotron">
+        <h2 class="text-center">Employee Directory Application</h2>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date of Birth</th>
+                <th>Depatment</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <form name="employeeForm" ng-submit="formSubmit(employeeData)">
+                    <td>
+                        <input class="form-control" ng-model="employeeData.name" placeholder="Name" required />
+                    </td>
+                    <td>
+                        <input class="form-control" ng-model="employeeData.email" placeholder="abc@xyz.com" required />
+                    </td>
+                    <td>
+                        <input type="date" class="form-control" ng-model="employeeData.dob" placeholder="DD-MM-YYYY" required />
+                    </td>
+                    <td>
+                        <input class="form-control" ng-model="employeeData.department" placeholder="Department" required />
+                    </td>
+                    <td>
+                        <!-- <input class="form-control" ng-model="employeeData.gender" placeholder="Gender" required /> -->
+                        <select class="form-control" ng-model="employeeData.gender" required ng-required="true">
+                              <option>Male</option>
+                              <option>Female</option>
+                            </select>
+                    </td>
+                    <td>
+                        <input class="form-control" ng-model="employeeData.age" placeholder="Age" ng-disabled=true required />
+                    </td>
+                    <td>
+                        <button class="btn btn-success" ng-disabled="update" type="submit">Create</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-success" ng-disabled="!update">Update</button>
+                    </td>
+                </form>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in employees">
+                <td>{{employee.name}}</td>
+                <td>{{employee.email}}</td>
+                <td>{{employee.dob | date:'dd-MMM-yyyy'}}</td>
+                <td>{{employee.department}}</td>
+                <td>{{employee.gender}}</td>
+                <td>{{employee.age}}</td>
+                <td>
+                    <button class="btn btn-sm btn-primary" ng-click="editEmployee(employee)">Edit</button>
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-danger" ng-click="deleteEmployee(employee)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="/client/public/js/angular.min.js"></script>
+    <script src="/client/employee.controller.js"></script>
+</body>
+
+</html>
+
+</html>
